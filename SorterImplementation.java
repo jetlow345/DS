@@ -1,6 +1,5 @@
 import java.rmi.*;
 import java.rmi.server.UnicastRemoteObject;
-// import java.rmi.server.UnicastRemoteObject;
 import java.util.Collections;
 import java.util.Stack;
 
@@ -67,11 +66,7 @@ public boolean isEmpty() throws RemoteException{
 }
 
 public int delayPop(int millis) throws RemoteException{
-    try {
-        Thread.sleep(millis);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    return val.pop();
+    return millis;
 }
 }
+
