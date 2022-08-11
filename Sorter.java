@@ -1,5 +1,6 @@
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.Stack;
 
 
 //This is an interface that defines the methods for Remote Operations 
@@ -10,4 +11,5 @@ public interface Sorter extends Remote {
     int pop() throws RemoteException;
     boolean isEmpty() throws RemoteException;
     int delayPop(int millis) throws RemoteException;
+    Stack<Integer> getStack() throws RemoteException;
 }
