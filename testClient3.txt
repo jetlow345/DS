@@ -1,0 +1,23 @@
+//push test 
+pushValue 30 pushValue 2 pop pop
+
+//pop test
+pushValue 10 pop
+
+//descending order test
+pushValue 1 pushValue 2 pushValue 3 pushOperator descending pop pop pop
+
+//ascending order test
+pushValue 3 pushValue 2 pushValue 1 pushOperator ascending pop pop pop
+
+//max test
+pushValue 1 pushValue 2 pushValue 3 pushOperator max pop
+
+//min test
+pushValue 1 pushValue 2 pushValue 3 pushOperator min pop
+
+//is Empty test
+pushValue 10 isEmpty pop isEmpty
+
+//Delay pop test
+pushValue 10 delayPop 500
